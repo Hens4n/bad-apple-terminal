@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include "filemnp.h"
+#include <jpeglib.h>
 
+void readGenerateASCII();
 
 #endif
