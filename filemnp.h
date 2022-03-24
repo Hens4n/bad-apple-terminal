@@ -8,10 +8,12 @@
 #include <stdlib.h>
 #endif 
 
-#define PATH_MAX 260
-#define PATH_DEFAULT "~/frames/"
-#define PATH_GRAYSCALE "~/frames/gray"
+#define MAX_PATH 4096
+#define GRAYSCALE_PATH "~/frames/gray"
+#define BASH_COMMAND "/bin/ls ~/frames/gray | wc -l"
 
 FILE *openImage(size_t const currentImage);
+
+size_t getFramesQuantity();
 
 #endif 
