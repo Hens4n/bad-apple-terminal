@@ -2,8 +2,8 @@
 It's just a personal project to play "Bad Apple!!" on the terminal.
 
 ## Table of content
-* [About the project](about-the-project)
-* [What is Bad Apple?](what-is-bad-apple?)
+* [About the project](https://github.com/Hens4n/bad-apple-terminal#about-the-project)
+* [What is Bad Apple?](https://github.com/Hens4n/bad-apple-terminal#what-is-bad-apple)
 
 ## About the project
 It's just a personal project to play "Bad Apple!!" on the terminal using ASCII character. Possibly it will can be used to reproduce other things in the terminal in ASCII characters, but my goal now is to play "Bad Apple!!".
