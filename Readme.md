@@ -11,7 +11,7 @@ It's just a personal project to play "Bad Apple!!" on the terminal using ASCII c
 This project is also a challenge to myself to put all my knowledge and creativity into action.
 
 ## What is Bad Apple?
-Briefly, "Bad Apple!!" is a popular Japanese song from the Touhou game series which got famous by the variety of places (like a calculator) to play the 2009 fan-released 3D clip of this song. 
+Briefly, "Bad Apple!!" is a popular Japanese song from the Touhou game series which got famous by the variety of places (like a [calculator](https://youtu.be/6pAeWf3NPNU)) to play the [2009 fan-released 3D clip](https://youtu.be/UkgK8eUdpAo) of this song. 
 
 ## Still in progress
 I will soon update the Readme with some information about the code.
