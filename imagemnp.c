@@ -4,7 +4,7 @@
 void readGenerateASCII()
 {
   u_int8_t *pixelValues = NULL;                                     // A Pointer that will hold pixel values from the image
-  size_t numberOfFrames = 1;                                        // Will be returned by a function (not yet written)
+  size_t numberOfFrames = getFramesQuantity();                       
   FILE *image;
   struct jpeg_decompress_struct imageData;                          // Allocating JPEG Decompress Object
 //struct jpeg_error_mgr jErr;                                       // Error handler struct
@@ -29,4 +29,20 @@ void readGenerateASCII()
     fclose(image);
   }
   jpeg_destroy_decompress(&imageData);
+}
+
+void generateFrames(char *videoFile)                                // Generates and resizes frames from video 
+{
+  char *program = "ffmpeg";
+  char *args[] = {program, "-i", videoFile, "-vf", "scale=80:-1", STORE_VFRAMES_PATH, NULL};
+
+  execvp(program, args);                                            // Check execvp from unistd.h 
+}
+
+void generateGrayFrames()                                           // Convert all the frames to grayscale frames
+{
+  char *program = "convert";
+  char *args[] = {program, CONVERT_FRAMES_PATH, "-colorspace", "Gray", STORE_GFRAMES_PATH, NULL};
+
+  execvp(program, args);                                            // Check execvp from unistd.h
 }
