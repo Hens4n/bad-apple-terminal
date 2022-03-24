@@ -9,6 +9,8 @@
 #endif 
 
 #define PATH_MAX 260
+#define PATH_DEFAULT "~/frames/"
+#define PATH_GRAYSCALE "~/frames/gray"
 
 FILE *openImage(size_t const currentImage);
 
