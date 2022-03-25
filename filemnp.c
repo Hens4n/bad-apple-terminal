@@ -16,13 +16,16 @@ FILE *openImage(size_t const currentImage)
   return image;
 }
 
-size_t getFramesQuantity()
+size_t getNumberOfFrames()
 {
-  FILE *rStdout;
-  char framesQuantity[10];
+  FILE *rStdout;                                                          // Gets stdout into rStdout 
+  char bashCommand[MAX_PATH];
+  char framesQuantity[10];                                                // Stores 10⁹ number of frames
   size_t aux;
 
-  if((rStdout = popen(BASH_COMMAND, "r")) == NULL) {
+  sprintf(bashCommand, BASH_COMMAND, GRAYSCALE_PATH);
+
+  if((rStdout = popen(bashCommand, "r")) == NULL) {                      // popen to read stdout in the file
     printf("There was an error reading stdout.\n");
     exit(EXIT_FAILURE);
   }
