@@ -1,7 +1,6 @@
 #include "imagemnp.h"
 #include "filemnp.h"
 
-
 int main(int argc, char **argv)
 {
   if(argc != 2) {
@@ -9,8 +8,9 @@ int main(int argc, char **argv)
     exit(EXIT_FAILURE);
   }
 
-  generateFrames(argv[1]);                                          // Generate frames from source video  
-  generateGrayFrames();                                             // Generate grayscale frames for each frame
+  generateFrames(argv[1]);                                          // Generates frames from source video  
+  generateGrayFrames();                                             // Generates grayscale frames for each frame
+  readGenerateASCII();                                              // Handles ASCII creation
 
   return EXIT_SUCCESS;
 }
