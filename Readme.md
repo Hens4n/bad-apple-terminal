@@ -1,5 +1,5 @@
 # Bad Apple Terminal
-It's just a personal project to play "Bad Apple!!" on the terminal
+It's just a personal project to play "Bad Apple!!" on the terminal.<br/>
 [See the running program](https://youtu.be/gKyNBp4C2Gk)
 ## Table of content
 * [About the project](https://github.com/Hens4n/bad-apple-terminal#about-the-project)
