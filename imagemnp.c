@@ -27,7 +27,7 @@ void readGenerateASCII()
       getASCIILine(pixelValues, imageData.image_width, ascii);
       printf("%s\n", ascii);
     }
-    usleep(SECONDS_PER_FRAMES);                                     // Set the FPS
+    usleep(MICROSECONDS_PER_FRAMES);                                     // Set the FPS
     CLEAR_SCREEN; 
     jpeg_finish_decompress(&imageData);                             // Frees memory and makes the struct ready for another frame
     fclose(image);
