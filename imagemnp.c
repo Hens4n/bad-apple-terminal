@@ -48,7 +48,7 @@ void generateFrames(int8_t *videoFile)                                // Generat
 void generateGrayFrames()                                           // Convert all the frames to grayscale frames
 {
   int8_t command[MAX_PATH];
-  sprintf(command, "convert %s -colorspace Gray %s", CONVERT_FRAMES_PATH, STORE_GFRAMES_PATH);
+  sprintf(command, "magick convert %s -colorspace Gray %s", CONVERT_FRAMES_PATH, STORE_GFRAMES_PATH);
 
   system(command);
 }
