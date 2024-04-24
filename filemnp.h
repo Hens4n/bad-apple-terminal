@@ -1,19 +1,16 @@
-#ifndef _FILEMNP_H
-#define _FILEMNP_H
+#ifndef FILEMNP_H
+#define FILEMNP_H
 
-#ifndef _STDIO_H
 #include <stdio.h>
-#endif
-#ifndef _STDLIB_H
 #include <stdlib.h>
-#endif 
+#include <stdint.h>
 
 #define MAX_PATH 4096                                               // File max path
-#define GRAYSCALE_PATH "/home/$USER/frames/gray/"                   // Location of frames in grayscale. Change $USER for yours
+#define GRAYSCALE_PATH "$home/frames/gray/"                         // Location of frames in grayscale
 #define BASH_COMMAND "/bin/ls %s | wc -l"                           // Unix command to get number of files in a folder
 
 FILE *openImage(size_t const currentImage);
 
-size_t getNumberOfFrames();
+size_t getNumberOfFrames();                                         // Only work on Unix
 
 #endif 
